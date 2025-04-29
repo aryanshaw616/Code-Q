@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(145deg, #fff, #f4f4f4);
+    font-family: 'Arial', sans-serif;
+}
+
+.main-container {
+    min-height: calc(100vh - 136px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    display: block;
+    margin: -80px auto 20px;
+    border-radius: 10px;
+    border: 5px solid #d4af37; /* Gold border */
+    animation: uplift 1s ease-out infinite alternate;
+}
+
+/* Elevation effect for the image */
+@keyframes uplift {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #d4af37;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+footer {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: #555;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.d-flex p {
+    margin: 0 10px;
+}
+
+.card button {
+    width: 45%;
+    background-color: #d4af37;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #b89a2a;
+}
+
+.card .result-box {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #d4af37;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Adding a slight blur effect */
+}
+
+.result-box p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.result-box .score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+/* Extra color addition */
+.card .result-box p {
+    color: #4e4e4e; /* Darker gray text for better readability */
+}
+
+.card button {
+    background-color: #d4af37;
+    border: none;
+    color: white;
+}
+
+.card button:hover {
+    background-color: #c79a2a;
+}

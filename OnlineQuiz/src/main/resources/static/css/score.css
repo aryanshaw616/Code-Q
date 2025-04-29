@@ -1,0 +1,91 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Main Container Styling */
+.main-container {
+    min-height: calc(100vh - 136px);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Header */
+h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+    position: relative;
+    animation: celebration 2s infinite ease-in-out; /* Celebration animation */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    font-size: 18px;
+}
+
+table th {
+    background-color: #003366; /* Dark Blue */
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9; /* Light background */
+}
+
+table tr:nth-child(even) td {
+    background-color: #fff8e1; /* Light Gold background for alternate rows */
+}
+
+/* Hover Effect */
+table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Footer Styling */
+footer {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #003366; /* Dark Blue */
+    color: white;
+}
+
+/* Celebration Animation */
+@keyframes celebration {
+    0% {
+        transform: scale(1);
+        color: #f1c40f; /* Gold */
+    }
+    50% {
+        transform: scale(1.1);
+        color: #003366; /* Dark Blue */
+    }
+    100% {
+        transform: scale(1);
+        color: #f1c40f; /* Gold */
+    }
+}
